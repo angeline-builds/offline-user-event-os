@@ -1,0 +1,4 @@
+interface:
+  display_name: "线下活动运营 OS"
+  short_description: "把活动方案整理成活动前中后可执行、可复盘的运营工具包"
+  default_prompt: "Use $offline-user-event-os to turn this event brief into a lifecycle-based operations kit."
