@@ -1,0 +1,84 @@
+{
+  "project": "场序演示工作区",
+  "event_name": "城市秋日露营",
+  "event_status": "completed",
+  "objective": "完成一场面向社区用户的轻户外交流活动，并沉淀可复用的供应商、内容和现场经验",
+  "date": "2026-10-18",
+  "location": "示例城市 · 湖畔营地",
+  "owner": "活动负责人",
+  "audience": "社区用户与亲子家庭",
+  "expected_attendance": 80,
+  "planned_budget_cny": 12000,
+  "planned_revenue_cny": 6400,
+  "evidence_status": "SIMULATED",
+  "before": {
+    "people": [
+      {"name": "项目协调人", "role": "总控", "owner": "活动负责人", "channel": "协作工具", "status": "已确认", "due": "2026-10-15", "note": "公开示例，不含真实联系方式"},
+      {"name": "场地负责人", "role": "场地与安全", "owner": "项目协调人", "channel": "电话", "status": "已确认", "due": "2026-10-16", "note": "活动前一天再次确认"}
+    ],
+    "materials": [
+      {"item": "签到物料", "quantity": 80, "supplier": "物料服务商 A", "status": "已到位", "due": "2026-10-17", "contingency": "保留电子签到"},
+      {"item": "雨具", "quantity": 20, "supplier": "户外服务商 B", "status": "已到位", "due": "2026-10-17", "contingency": "大雨转室内"}
+    ],
+    "rundown": [
+      {"time": "09:00", "task": "签到与分组", "owner": "用户运营", "dependency": "签到物料", "status": "已完成", "note": "迟到用户单独引导"},
+      {"time": "10:00", "task": "营地体验", "owner": "现场负责人", "dependency": "安全检查", "status": "已完成", "note": "亲子区单独划分"},
+      {"time": "14:30", "task": "合影与返程提醒", "owner": "内容负责人", "dependency": "拍摄授权", "status": "已完成", "note": "未授权用户不入镜"}
+    ],
+    "user_arrangements": [
+      {"item": "报名确认与分组", "owner": "用户运营", "status": "已完成", "due": "2026-10-16", "note": "按家庭与个人分组"},
+      {"item": "交通提醒", "owner": "用户运营", "status": "已完成", "due": "2026-10-17", "note": "包含停车与天气提示"}
+    ],
+    "budget_items": [
+      {"item": "场地与基础服务", "planned_cny": 5000, "owner": "采购负责人", "status": "已审批", "note": "含基础清洁"},
+      {"item": "物料与餐饮", "planned_cny": 7000, "owner": "项目协调人", "status": "已审批", "note": "按实际人数结算"}
+    ],
+    "fee_plan": [
+      {"item": "活动参与费", "unit_price_cny": 80, "expected_quantity": 80, "status": "已确认", "note": "退款规则随报名说明发布"}
+    ]
+  },
+  "during": {
+    "contacts": [
+      {"name": "项目协调人", "role": "现场总控", "channel": "协作工具", "contact": "已脱敏", "backup": "活动负责人", "note": "公开示例"},
+      {"name": "场地负责人", "role": "场地与安全", "channel": "电话", "contact": "已脱敏", "backup": "值班经理", "note": "公开示例"}
+    ],
+    "live_tasks": [
+      {"time": "08:30", "task": "完成场地巡检", "owner": "现场总控", "status": "已完成", "note": "确认雨天备用区"},
+      {"time": "12:00", "task": "补充饮用水", "owner": "物料负责人", "status": "已完成", "note": "现场新增任务"}
+    ],
+    "incidents": [
+      {"time": "11:20", "severity": "低", "issue": "亲子区饮用水不足", "action": "临时补货并增加巡检频次", "owner": "物料负责人", "follow_up": "下次按家庭数增加 15% 备货", "status": "已闭环"}
+    ]
+  },
+  "after": {
+    "registered": 80,
+    "checked_in": 74,
+    "satisfaction_5": 4.7,
+    "actual_revenue_cny": 5920,
+    "actual_cost_cny": 10600,
+    "metrics_evidence_status": "SIMULATED",
+    "cases": [
+      {"type": "服务反馈", "summary": "一位用户反馈返程指引不够清晰", "owner": "用户运营", "resolution": "当天补发路线并更新模板", "due": "2026-10-19", "status": "已闭环"}
+    ],
+    "suppliers": [
+      {"name": "场地服务商 A", "purchase_type": "对公", "current_node": "到账确认", "nodes": ["合同", "定金", "验收", "发票", "付款", "到账确认"], "owner": "采购负责人", "status": "已闭环", "note": "所有节点为演示数据"},
+      {"name": "物料服务商 B", "purchase_type": "电商", "current_node": "发票", "nodes": ["付款", "发票"], "owner": "项目协调人", "status": "进行中", "note": "待归档电子发票"}
+    ],
+    "ugc": [
+      {"channel": "内容平台 A", "content_type": "图文", "count": 12, "likes": 386, "saves": 104, "reward": "露营杯", "authorization": "已授权复用 8 条", "reuse_state": "待精选"},
+      {"channel": "社交渠道 B", "content_type": "图文", "count": 18, "likes": 241, "saves": 0, "reward": "无", "authorization": "仅统计，不二次使用", "reuse_state": "不复用"}
+    ],
+    "feedback": [
+      {"source": "满意度问卷", "summary": "用户希望增加儿童休息区", "owner": "活动负责人", "action": "加入下一场场地筛选清单", "status": "已闭环", "proof": "模板已更新"}
+    ],
+    "suggestion": "保留分组体验与天气提醒；下一场提前配置儿童休息区，并增加饮用水安全库存。",
+    "retrospective": "小规模分组能提升现场秩序；物料应按家庭数量而不是报名人数估算。",
+    "archive_state": "ready"
+  },
+  "guardrails": [
+    "示例数据全部为虚构或模拟，不代表真实活动业绩",
+    "对外文件不得包含真实姓名、手机号、邮箱、报名名单、支付信息或未授权人像",
+    "合同、付款、退款、外部联系和现场安全决定必须由人审批",
+    "API Key 只保存在用户自己的安全环境，不写入活动文档或公开仓库"
+  ]
+}
